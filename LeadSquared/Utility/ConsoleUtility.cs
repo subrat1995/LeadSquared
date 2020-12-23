@@ -15,6 +15,7 @@ Available User Actions:
             ");
         }
 
+        // beautify the console output with different colors
         public static void ConsoleWriteColorLine(string s, ConsoleColor color)
         {
             Console.ForegroundColor = color;

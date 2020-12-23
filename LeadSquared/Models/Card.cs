@@ -2,6 +2,7 @@
 
 namespace LeadSquared.Models
 {
+    // A card has a suite and a value associated to it.
     public class Card
     {
         public Suite Suite { get; set; }

@@ -5,8 +5,10 @@ namespace LeadSquared.Utility
 {
     public static class DeckUtility
     {
+        // extension method to shuffle a deck
         public static Deck Shuffle(this Deck deck)
         {
+            // if less than 2 cards it is not possible to shuffle
             if (deck.Cards.Count < 2)
             {
                 throw new Exception("Less than 2 cards left in deck. Can not shuffle deck.");
@@ -24,6 +26,7 @@ namespace LeadSquared.Utility
             return deck;
         }
 
+        // extension method to play the top card of a deck
         public static Deck PlayTopCard(this Deck deck)
         {
             if (deck.Cards.Count == 0)
@@ -37,6 +40,7 @@ namespace LeadSquared.Utility
             return deck;
         }
 
+        // extension method to print the current deck
         public static void PrintDeck(this Deck deck)
         {
             if (deck.Cards.Count == 0)

@@ -1,5 +1,6 @@
 ﻿namespace LeadSquared.Enums
 {
+    // enum to store supported card values
     public enum CardValue
     {
         Ace = 1,
